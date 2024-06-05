@@ -31,6 +31,7 @@ h4 {
 }
 .inf-item {
     margin: 10px 50px;
+    text-align: center;
 }
 .image-about {
     position: relative;
@@ -176,4 +177,10 @@ h4 {
     background-color: #EEEEEE;
     width: 100%;
     height: 100px;
+}
+.line {
+    background-color: #4CAF50;
+    height: 5px;
+    width: 100%;
+    margin: 20px 0;
 }
