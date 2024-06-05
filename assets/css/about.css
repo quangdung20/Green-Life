@@ -1,0 +1,179 @@
+h4 {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+}
+
+.image-about {
+    max-width: 100%;
+    display: block;margin: 0 auto;
+    text-align: center;
+}
+.main-inf {
+    background-color: rgba(199, 237, 248, 0.796);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.inf-items {
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    width: 80%;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+}
+.inf-item {
+    margin: 10px 50px;
+}
+.image-about {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 70%;
+    
+}
+.container-text {
+    position: absolute;
+    top: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.7em;
+    font-weight: bold;
+    background-color: rgba(82, 82, 82, 0.364);
+    border: 3px solid #ffffff;
+    padding: 20px;
+}
+.container-text-home {
+    position: absolute;
+    top: 40px;
+    width: 1000px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.7em;
+    font-weight: bold;
+    align-items: center ;
+    background-color: rgba(82, 82, 82, 0.364);
+    padding: 20px;
+}
+.content-span {
+    display: block;
+    text-align: justify;;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+
+}
+
+.title-team-inf {
+    color: rgb(94, 110, 75);
+    font-size: 36px;
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+.name-founder {
+    font-family: didot-w01-italic, serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.position {
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    font-size: 16px;
+}
+.avatar {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50% 50%;
+}
+.down-icon {
+    width: 100px;
+
+}
+/*  contact */
+
+/* Định dạng phần liên hệ */
+.contact {
+    padding: 20px;
+    padding-bottom: 20px;
+    background-color: #f8f9fa; /* Màu nền của phần liên hệ */
+    
+}
+
+/* Định dạng tiêu đề */
+.title-contact { 
+    margin: 0;
+    color: #333; /* Màu chữ của tiêu đề */
+}
+.contact-items {
+    display: flex;
+    justify-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+}
+/* Định dạng các mục liên hệ */
+.contact-item {
+    margin-bottom: 20px;
+    width: 45%;
+    position: relative;
+
+}
+
+/* Định dạng các biểu tượng và nội dung */
+.contact-icon {
+    list-style-type: none;
+    margin-bottom: 20px;
+
+}
+
+/* Định dạng biểu tượng */
+.contact-icon i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Định dạng nội dung */
+.content-contact {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Màu cho các biểu tượng */
+.contact-icon i.fa-location-dot {
+    color: #007bff;
+}
+
+.contact-icon i.fa-phone {
+    color: #28a745;
+}
+
+.contact-icon i.fa-facebook {
+    color: #3b5998;
+}
+
+.contact-icon i.fa-instagram {
+    color: #e4405f;
+}
+
+.contact-icon i.fa-linkedin {
+    color: #0e76a8;
+}
+.footer-box {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 100px;
+}

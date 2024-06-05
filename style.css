@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: #fff;
+    color: #83d9df;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(6, 5, 5, 0.1); 
+    width: 100%;
+    z-index: 100000000000;
+    position: fixed;
+    transition: all 0.5s;
+        box-shadow: 0 6px 10px rgba(223, 244, 224, 0.25), 0 10px 10px rgba(112, 112, 112, 0.167);
+}
+
+.bg-header {
+    background-color: #fff;
+    top: 0;
+    height: 100px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    color:#4CAF50;
+}
+nav ul li a, .login_title {
+    color:#4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    size: 50px;
+}
+
+main {
+    /* padding: 20px; */
+    top: 170px;
+    position: relative;
+    width: 1120px;
+    margin: auto;
+}
+.fit-contents{
+    width: 1120px;
+}
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.box_logo{
+    color:#4CAF50;
+    text-align: center;
+    margin-left: -100px;
+    align-items: center;
+}
+.login_item {
+    position: absolute;
+    top: 90px;
+    left: 80%;
+    opacity: 0.7;
+}
+.login_item:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+.display_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_nav, .item_nav-home {
+    text-decoration: none;
+    color: rgba(14, 19, 13, 0.747);
+    margin: 0 10px;
+    padding: 0 10px;   
+}
+.item_nav:hover, .item_nav.active, .item_nav-home:hover, .item_nav-home.item_nav.active{
+    color: #4CAF50;
+    
+}
+
+.item_nav.current, .item_nav-home.current {
+    color: green;
+}
+.box_nav_header {
+    margin: 20px 0;
+}
+.content-home{
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
+/* Thêm lớp nav-link để dễ dàng chọn các mục điều hướng */
+.item_nav, .item_nav-home {
+    text-decoration: none;
+    color: black;
+}
+
+.item_nav.active,
+.item_nav-home.active, .color-title  {
+    color: #4CAF50;
+}
+
+.item_nav.current {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.home{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.col-item {
+    display: grid;
+    /*  chia doi */
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+}
+
+.chatbox-icon {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: #57d55d;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    box-shadow: 0 6px 10px rgba(42, 43, 42, 0.25), 0 10px 10px rgba(59, 59, 59, 0.167);
+
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 100000000000;
+    box-shadow: 0 6px 10px rgba(101, 101, 101, 0.25), 0 10px 10px rgba(112, 112, 112, 0.167);
+}
+
+.chatbox-header {
+    background-color: #4CAF50;
+    padding: 10px 10px 10px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbox-header .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.chatbox-body {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff0f5;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.bot {
+    background-color: #ffebcd;
+    align-self: flex-start;
+}
+
+.user {
+    background-color: #add8e6;
+    align-self: flex-end;
+}
+
+.chatbox-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #5695ee;
+}
+
+.chatbox-footer input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.chatbox-footer button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffb6c1;
+    font-weight: bold;
+}
+
+.chatbox-footer button:hover {
+    background-color: #ffebcd;
+}
+.home-item{
+    width: 50%;
+}
+.content-g {
+    text-align: justify !important;
+}
+.textarea {
+    padding: 20px;
+    color: #000;
+
+}
+.title-content, .title-tr {
+    margin: 10px 0 0 10px;
+}
+.title-tr {
+    font-style: italic;
+    margin-top: 0;
+}

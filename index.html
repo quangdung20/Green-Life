@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Dự án tái chế</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
+    <link rel="website icon" type="png" href="assets\images\logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="box_logo display_center">
+            <img src="assets\images\logo.png" height="80px" style="margin-right: 10px;">
+            <h2>Chào mừng đến với Green Life!</h2>
+        </div>
+        <nav class="box_nav_header display_center">
+            <ul class="display_center" style="margin: 0">
+                <li><a class="item_nav-home current" href="index.html" data-page="home">Trang Chủ</a></li>
+                <li><a class="item_nav" href="#" data-page="posts">Tin tức</a></li>
+                <li><a class="item_nav" href="#" data-page="events">Sự kiện</a></li>
+                <li><a class="item_nav" href="#" data-page="shop">Mua bán</a></li>
+                <li><a class="item_nav" href="#" data-page="about">Liên hệ</a></li>
+            </ul>
+
+        </nav>
+        <div class="login_item display_center">
+            <a class="display_center" href="app/signin.html">
+                <img src="assets\images\user.png" width="50px" height="50px">
+                <p class="login_title" style="margin-left: 10px;">Đăng nhập</p>
+            </a>
+        </div>
+        <span class="bg-header"></span>
+    </header>
+    <main id="main-content" class="home">
+        <!-- Nội dung mặc định của trang chủ -->
+        <section>
+            <div class="image-about">
+                <img class="fit-contents" src="assets\images\R.jpg">
+                <div class="container-text-home">
+                    <h1 style="font-size: 100px; margin-bottom: 40px">Green Life</h1>
+                    <span style="font-size: 25px; " class="content-span content-home"> Mỗi hành động, một tác động - Bảo
+                        vệ môi trường là bảo vệ chính ta!</span>
+                </div>
+            </div>
+            <div class="">
+                <div class="display_center"><img src="assets\images\Thêm tiêu đề.png"></div>
+            </div>
+            <div style="padding-bottom: 50px;">
+                <!-- tieu de -->
+                <h2 class="title display_center">Vì sao cần bảo vệ môi trường ?</h2>
+                <!-- gắn video youtube -->
+                <div class="video-container display_center">
+                    <iframe width="700px" height="400px" src="https://www.youtube.com/embed/EHpZK-Piky0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="chatbox-icon" id="chatboxIcon" onclick="toggleChatbox()">💬</div>
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox-header">
+                <p>Green life</p>
+                <button class="close-btn" onclick="toggleChatbox()">×</button>
+            </div>
+            <div class="chatbox-body" id="chatboxBody">
+                <div class="message bot">Xin chào! Tôi có thể giúp gì cho bạn?</div>
+            </div>
+            <div class="chatbox-footer">
+                <input type="text" id="userInput" placeholder="Nhập tin nhắn...">
+                <button onclick="sendMessage()">Gửi</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <i style="font-size: 13px; color: #ffffff;">&copy; 2024 Green Life. Proudly created by <a
+                style="font-size: 13px; color: #ffffff; font-style: italic; text-decoration:underline;"
+                href="https://github.com/quangdung20">Quang Dung</a></i>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
