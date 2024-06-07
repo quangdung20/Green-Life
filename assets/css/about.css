@@ -38,24 +38,27 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    width: 70%;
+    width: 100%;
     
 }
 .container-text {
     position: absolute;
-    top: 70px;
+    top: 50px;
+    width: 80%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     line-height: 1.7em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 16px;
     background-color: rgba(82, 82, 82, 0.364);
     border: 3px solid #ffffff;
     padding: 20px;
 }
 .container-text-home {
     position: absolute;
-    top: 40px;
-    width: 1000px;
+    top: 50px;
+    width: 80%;
+    height: 60%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     line-height: 1.7em;
@@ -106,7 +109,7 @@ h4 {
 
 /* Định dạng phần liên hệ */
 .contact {
-    padding: 20px;
+    /* padding: 20px; */
     padding-bottom: 20px;
     background-color: #f8f9fa; /* Màu nền của phần liên hệ */
     
@@ -117,7 +120,15 @@ h4 {
     margin: 0;
     color: #333; /* Màu chữ của tiêu đề */
 }
+.contact-item ul{
+    margin-left: 10px;
+}
+.map-box {
+    width: 100%;
+    height: 100%;
+}
 .contact-items {
+    width: 100%;
     display: flex;
     justify-items: center;
     align-items: stretch;
@@ -129,7 +140,7 @@ h4 {
 /* Định dạng các mục liên hệ */
 .contact-item {
     margin-bottom: 20px;
-    width: 45%;
+    width: 50%;
     position: relative;
 
 }
@@ -183,4 +194,40 @@ h4 {
     height: 5px;
     width: 100%;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 912px) { 
+    .contact-items {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        flex-direction: column;
+    }
+    .container-text {
+    position: absolute;
+    top: 20px;
+    width: 80%;
+    color: #ffffff;
+    line-height: 1.7em;
+    background-color: rgba(82, 82, 82, 0.364);
+    border: 2px solid #ffffff;
+    padding: 10px;
+    }
+    .content-span {
+        display: block;
+        text-align: justify;;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-bottom: 30px;
+    
+    }
+    .map-box {
+        display: none;
+    }
+     .contact-item {
+        width: 90% !important;
+    }
 }

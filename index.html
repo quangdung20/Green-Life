@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Dự án tái chế</title>
+    <title>Green Life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/about.css">
-
+                          
     <link rel="website icon" type="png" href="assets\images\logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -15,28 +15,33 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-menu">
         <div class="box_logo display_center">
-            <img src="assets\images\logo.png" height="80px" style="margin-right: 10px;">
-            <h2>Chào mừng đến với Green Life!</h2>
+            <img src="assets\images\logo.png" style="margin-right: 10px; width: 7vw;">
+            <h2 class = "header-title">Chào mừng đến với Green Life!</h2>
+            <div class="header-bar" id = "header-bar" onclick="openNavBar()" ><button id="button-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <nav class="box_nav_header display_center">
-            <ul class="display_center" style="margin: 0">
-                <li><a class="item_nav-home current" href="index.html" data-page="home">Trang Chủ</a></li>
-                <li><a class="item_nav" href="#" data-page="events">Sự kiện</a></li>
-                <li><a class="item_nav" href="#" data-page="blog">Tin Tức</a></li>
-                <li><a class="item_nav" href="#" data-page="shop">Mua bán</a></li>
-                <li><a class="item_nav" href="#" data-page="about">Liên hệ</a></li>
-            </ul>
-
-        </nav>
-        <div class="login_item display_center">
-            <a class="display_center" href="app/signin.html">
-                <img src="assets\images\user.png" width="50px" height="50px">
-                <p class="login_title" style="margin-left: 10px;">Đăng nhập</p>
-            </a>
+        <div class = "header-bar-line"> 
+            <nav class="box_nav_header">
+                <ul class="display_center" id = "menu-bar">
+                    <li onclick="closeNavBar()" ><a class="menu-bar-item item_nav-home current" href="index.html" data-page="home">Trang Chủ</a></li>
+                    <li onclick="closeNavBar()" ><a class="menu-bar-item item_nav" href="#" data-page="events">Sự kiện</a></li>
+                    <li onclick="closeNavBar()" ><a class="menu-bar-item item_nav" href="#" data-page="blog">Tin Tức</a></li>
+                    <li onclick="closeNavBar()" ><a class="menu-bar-item item_nav" href="#" data-page="shop">Mua bán</a></li>
+                    <li onclick="closeNavBar()" ><a class="menu-bar-item item_nav" href="#" data-page="about">Liên hệ</a></li>
+                </ul>
+                <div class="login_item display_center">
+                    <a class="display_center" href="app/signin.html">
+                        <img src="assets\images\user.png" width="50px" height="50px">
+                        <p class="login_title" style="margin-left: 10px;">Đăng nhập</p>
+                    </a>
+                </div>
+            </nav>
         </div>
-        <span class="bg-header"></span>
+        
     </header>
     <main id="main-content" class="home">
         <!-- Nội dung mặc định của trang chủ -->
@@ -44,13 +49,15 @@
             <div class="image-about">
                 <img class="fit-contents" src="assets\images\R.jpg">
                 <div class="container-text-home">
-                    <h1 style="font-size: 100px; margin-bottom: 40px">Green Life</h1>
-                    <span style="font-size: 25px; " class="content-span content-home"> Mỗi hành động, một tác động - Bảo
+                    <h1 style="font-size: 8vw;">Green Life</h1>
+                    <span style="font-size: 2vw; " class="content-span content-home"> Mỗi hành động, một tác động - Bảo
                         vệ môi trường là bảo vệ chính ta!</span>
                 </div>
             </div>
             <div class="">
-                <div class="display_center"><img src="assets\images\Thêm tiêu đề.png"></div>
+                <div><img src="assets\images\Thêm tiêu đề.png" style="
+    width: 100%;
+"></div>
             </div>
             <div style="padding-bottom: 50px;">
                 <!-- tieu de -->
@@ -61,6 +68,12 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+            </div>
+            <div class="footer-main">
+                <i style="font-size: 13px; color: #ffffff;"></i>
+                &copy; 2024 Green Life. Proudly created by <a
+                    style="font-size: 13px; color: #ffffff; font-style: italic; text-decoration:underline;"
+                    href="https://github.com/quangdung20">Quang Dung</a>
             </div>
         </section>
 
@@ -78,13 +91,15 @@
                 <button onclick="sendMessage()">Gửi</button>
             </div>
         </div>
+        
     </main>
 
-    <footer>
-        <i style="font-size: 13px; color: #ffffff;">&copy; 2024 Green Life. Proudly created by <a
-                style="font-size: 13px; color: #ffffff; font-style: italic; text-decoration:underline;"
-                href="https://github.com/quangdung20">Quang Dung</a></i>
-    </footer>
+    <div class = "footer" >
+        <i style="font-size: 13px; color: #ffffff;"></i>
+        &copy; 2024 Green Life. Proudly created by <a
+            style="font-size: 13px; color: #ffffff; font-style: italic; text-decoration:underline;"
+            href="https://github.com/quangdung20">Quang Dung</a>
+    </div>
     <script src="script.js"></script>
 </body>
 

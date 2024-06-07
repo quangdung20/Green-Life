@@ -1,5 +1,5 @@
 .container-fluid {
-    padding: 30px;
+    padding: 0 30px;
 }
 .border-img {
     border: 1px solid #0792f5;
@@ -34,10 +34,12 @@
 }
 .box-category-middle {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 .box-category-item {
-    width: 33.33%;
+    width: 30%;
+    margin: 0 10px;
 }
 
 .emojibinding {
@@ -219,11 +221,11 @@ a, input, select, textarea {
 .box-category {
     border: 2px solid #acacac;
     border-radius: 5px;
-    padding: 30px;
+    width: 100%;
 }
 .img-relative {
-    width: 300px;
-    height: 200px;
+    /* /* position: relative; */
+    width: 100%; 
 }
 .post-user {
     display: flex;

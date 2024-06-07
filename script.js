@@ -96,3 +96,39 @@ function addMessage(text, sender) {
     chatboxBody.appendChild(messageElement);
     chatboxBody.scrollTop = chatboxBody.scrollHeight;
 }
+
+// click bar icon then show menu
+function openNavBar() {
+    const navbar = document.getElementById('header-bar');
+    const menu = document.getElementById('menu-bar');
+    // khi clic vao icon bar thi hien menu
+    if (window.innerWidth <= 812) {
+        if (navbar.style.display === '') {
+            navbar.style.display = 'block';
+            menu.style.display = 'none';
+        } else {
+            navbar.style.display = '';
+            menu.style.display = 'block';
+        }
+    }
+}
+// click menu item then hide menu đối với màn hình max 812px
+function closeNavBar() {
+    const menu = document.getElementById('menu-bar');
+    const menuBarItem = document.querySelectorAll('.menu-bar-item');
+
+    // khi click vao item menu thi an menu
+    if (window.innerWidth <= 812) {
+        if (menu.style.display === 'block') {
+            // click vao item menu thi an menu
+            menuBarItem.forEach(item => {
+                item.addEventListener('click', function () {
+                    menu.style.display = 'none';
+                });
+            }
+            );
+        }
+    }
+}
+
+// show menu
