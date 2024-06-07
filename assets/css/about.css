@@ -230,4 +230,20 @@ h4 {
      .contact-item {
         width: 90% !important;
     }
+    .container-text{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .content-span{
+        padding: 0;
+        margin: 0 10px;
+    }
+    .title-content-about{
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+
+    }
 }
