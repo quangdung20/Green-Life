@@ -179,16 +179,21 @@ button {
     position: fixed;
     bottom: 100px;
     right: 50px;
-    background-color: #57d55d;
+    /* position: absolute; */
+    /* background-color: #57d55d; */
     padding: 10px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     font-size: 30px;
-    box-shadow: 0 6px 10px rgba(42, 43, 42, 0.25), 0 10px 10px rgba(59, 59, 59, 0.167);
+    /* box-shadow: 0 6px 10px rgba(42, 43, 42, 0.25), 0 10px 10px rgba(59, 59, 59, 0.167); */
 
 }
-
+.chatbox-icon img{  
+    width: 20vw;
+    height: 20vw;
+  
+}
 .chatbox {
     position: fixed;
     bottom: 100px;
