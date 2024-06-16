@@ -6,9 +6,11 @@ h4 {
 
 .image-about {
     max-width: 100%;
-    display: block;margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     text-align: center;
 }
+
 .main-inf {
     background-color: rgba(211, 236, 210, 0.796);
     padding: 20px;
@@ -18,6 +20,7 @@ h4 {
     flex-direction: column;
     margin-bottom: 30px;
 }
+
 .inf-items {
     align-items: center;
     display: flex;
@@ -29,23 +32,26 @@ h4 {
     align-content: center;
     flex-direction: row;
 }
+
 .inf-item {
     margin: 10px 50px;
     text-align: center;
 }
+
 .image-about {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
-    
+
 }
+
 .container-text {
     position: absolute;
     top: 50px;
     width: 80%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     line-height: 1.7em;
     /* font-weight: bold; */
@@ -54,22 +60,25 @@ h4 {
     border: 3px solid #ffffff;
     padding: 20px;
 }
+
 .container-text-home {
     position: absolute;
     top: 50px;
     width: 80%;
     height: 60%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     line-height: 1.7em;
     font-weight: bold;
-    align-items: center ;
+    align-items: center;
     background-color: rgba(82, 82, 82, 0.364);
     padding: 20px;
 }
+
 .content-span {
     display: block;
-    text-align: justify;;
+    text-align: justify;
+    ;
     margin-left: 20px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -84,16 +93,19 @@ h4 {
     width: 100%;
     text-align: center;
 }
+
 .name-founder {
     font-family: didot-w01-italic, serif;
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
 }
+
 .position {
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     font-size: 16px;
 }
+
 .avatar {
     width: 170px;
     height: 170px;
@@ -101,32 +113,39 @@ h4 {
     object-position: 50% 50%;
     border-radius: 50% 50%;
 }
+
 .down-icon {
     width: 100px;
 
 }
+
 /*  contact */
 
 /* Định dạng phần liên hệ */
 .contact {
     /* padding: 20px; */
     padding-bottom: 20px;
-    background-color: #f8f9fa; /* Màu nền của phần liên hệ */
-    
+    background-color: #f8f9fa;
+    /* Màu nền của phần liên hệ */
+
 }
 
 /* Định dạng tiêu đề */
-.title-contact { 
+.title-contact {
     margin: 0;
-    color: #333; /* Màu chữ của tiêu đề */
+    color: #333;
+    /* Màu chữ của tiêu đề */
 }
-.contact-item ul{
+
+.contact-item ul {
     margin-left: 10px;
 }
+
 .map-box {
     width: 100%;
     height: 100%;
 }
+
 .contact-items {
     width: 100%;
     display: flex;
@@ -137,6 +156,7 @@ h4 {
     align-content: center;
     flex-direction: row;
 }
+
 /* Định dạng các mục liên hệ */
 .contact-item {
     margin-bottom: 20px;
@@ -184,11 +204,13 @@ h4 {
 .contact-icon i.fa-linkedin {
     color: #0e76a8;
 }
+
 .footer-box {
     background-color: #EEEEEE;
     width: 100%;
     height: 100px;
 }
+
 .line {
     background-color: #4CAF50;
     height: 5px;
@@ -196,7 +218,7 @@ h4 {
     margin: 20px 0;
 }
 
-@media screen and (max-width: 912px) { 
+@media screen and (max-width: 912px) {
     .contact-items {
         display: flex;
         justify-items: center;
@@ -206,41 +228,49 @@ h4 {
         align-content: space-around;
         flex-direction: column;
     }
+
     .container-text {
-    position: absolute;
-    top: 20px;
-    width: 80%;
-    color: #ffffff;
-    line-height: 1.7em;
-    background-color: rgba(82, 82, 82, 0.364);
-    border: 2px solid #ffffff;
-    padding: 10px;
+        position: absolute;
+        top: 20px;
+        width: 80%;
+        color: #ffffff;
+        line-height: 1.7em;
+        background-color: rgba(82, 82, 82, 0.364);
+        border: 2px solid #ffffff;
+        padding: 10px;
     }
+
     .content-span {
         display: block;
-        text-align: justify;;
+        text-align: justify;
+        ;
         font-size: 15px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding-bottom: 30px;
-    
+
     }
+
     .map-box {
         display: none;
     }
-     .contact-item {
+
+    .contact-item {
         width: 90% !important;
     }
-    .container-text{
+
+    .container-text {
         position: relative;
         margin: 0;
         width: 100%;
         margin-bottom: 40px;
     }
-    .content-span{
+
+    .content-span {
         padding: 0;
         margin: 0 10px;
     }
-    .title-content-about{
+
+    .title-content-about {
         font-size: 20px;
         margin: 10px 0;
         text-align: center;
