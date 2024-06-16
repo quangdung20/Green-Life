@@ -58,7 +58,7 @@ main {
     padding: 20px;
     /* độ cao của header */
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -86,7 +86,7 @@ main {
     text-align: center;
     padding: 10px 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 10000000000000000000000000;
     position: fixed;
     width: 100%;
 }
