@@ -149,7 +149,6 @@ button {
 
 .item_nav:hover, .item_nav.active, .item_nav-home:hover, .item_nav-home.item_nav.active {
     color: #4CAF50;
-
 }
 
 .item_nav.current, .item_nav-home.current {

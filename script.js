@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a.item_nav');
-
+    console.log(links);
     // Khởi tạo trạng thái ban đầu khi tải trang
     initializeCurrentPage();
 
@@ -132,4 +132,4 @@ function closeNavBar() {
     }
 }
 
-// show menu
+// sau khi back page
