@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateCurrentPage(page) {
-        const currentLink = document.querySelector('.item_nav.current');
+        const currentLink = document.querySelector('.item_nav');
         if (currentLink) {
             currentLink.classList.remove('current');
         }
@@ -116,10 +116,8 @@ function openNavBar() {
 function closeNavBar() {
     const menu = document.getElementById('menu-bar');
     const menuBarItem = document.querySelectorAll('.menu-bar-item');
-
     // khi click vao item menu thi an menu
     if (window.innerWidth <= 812) {
-        if (menu.style.display === 'block') {
             // click vao item menu thi an menu
             menuBarItem.forEach(item => {
                 item.addEventListener('click', function () {
@@ -127,7 +125,7 @@ function closeNavBar() {
                 });
             }
             );
-        }
+        
     }
 }
 

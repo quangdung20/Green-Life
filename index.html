@@ -7,7 +7,7 @@
     <title>Green Life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/about.css">
-                          
+
     <link rel="website icon" type="png" href="assets\images\logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -17,31 +17,35 @@
 <body>
     <header class="header-menu">
         <div class="box_logo display_center">
-            <img src="assets\images\logo.png" style="margin-right: 10px; width: 7vw;">
-            <h2 class = "header-title">Chào mừng đến với Green Life!</h2>
-            <div class="header-bar" id = "header-bar" onclick="openNavBar()" ><button id="button-bar">
+            <img src="assets\images\logo.png" style="width: 7vw;" alt="Green Life">
+            <div class="header-bar" id="header-bar" onclick="openNavBar()"><button id="button-bar">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-        <div class = "header-bar-line"> 
+        <div class="header-bar-line">
             <nav class="box_nav_header">
-                <ul class="display_center" id = "menu-bar">
-                    <li onclick="closeNavBar()" ><a onclick="closeNavBar()" class="menu-bar-item item_nav-home current" href="index.html" data-page="home">Trang Chủ</a></li>
-                    <li onclick="closeNavBar()" ><a onclick="closeNavBar()" class="menu-bar-item item_nav" href="#" data-page="events">Sự kiện</a></li>
-                    <li onclick="closeNavBar()" ><a onclick="closeNavBar()" class="menu-bar-item item_nav" href="#" data-page="blog">Tin Tức</a></li>
-                    <li onclick="closeNavBar()" ><a onclick="closeNavBar()" class="menu-bar-item item_nav" href="#" data-page="shop">Mua bán</a></li>
-                    <li onclick="closeNavBar()" ><a onclick="closeNavBar()" class="menu-bar-item item_nav" href="#" data-page="about">Liên hệ</a></li>
+                <ul class="display_center" id="menu-bar">
+                    <li class="menu-bar-item" onclick="closeNavBar()"><a onclick="closeNavBar()" class="item_nav-home current"
+                            href="index.html" data-page="home">Trang Chủ</a></li>
+                    <li class="menu-bar-item" onclick="closeNavBar()"><a onclick="closeNavBar()" class="item_nav" href="#"
+                            data-page="events">Sự kiện</a></li>
+                    <li class="menu-bar-item" onclick="closeNavBar()"><a onclick="closeNavBar()" class="item_nav" href="#"
+                            data-page="blog">Tin Tức</a></li>
+                    <li class="menu-bar-item" onclick="closeNavBar()"><a onclick="closeNavBar()" class="item_nav" href="#"
+                            data-page="shopgreen">Shop</a></li>
+                    <li class="menu-bar-item" onclick="closeNavBar()"><a onclick="closeNavBar()" class="item_nav" href="#"
+                            data-page="about">Liên hệ</a></li>
                 </ul>
                 <div class="login_item display_center">
-                    <a class="display_center" href="app/signin.html">
+                    <!-- <a class="display_center" href="app/signin.html">
                         <img src="assets\images\user.png" width="50px" height="50px">
                         <p class="login_title" style="margin-left: 10px;">Đăng nhập</p>
-                    </a>
+                    </a> -->
                 </div>
             </nav>
         </div>
-        
+
     </header>
     <main id="main-content" class="home">
         <!-- Nội dung mặc định của trang chủ -->
@@ -77,11 +81,7 @@
             </div>
         </section>
 
-        <!-- <div class="chatbox-icon" id="chatboxIcon" onclick="toggleChatbox()">💬</div> -->
-        <div class="chatbox-icon" id="chatboxIcon" onclick="toggleChatbox()">
-            <img src="assets\images\418675549_1096137591568936_1783546295897608280_n.gif" alt="">
-        </div>
-
+        <div class="chatbox-icon" id="chatboxIcon" onclick="toggleChatbox()">💬</div>
         <div class="chatbox" id="chatbox">
             <div class="chatbox-header">
                 <p>Green life</p>
@@ -95,10 +95,10 @@
                 <button onclick="sendMessage()">Gửi</button>
             </div>
         </div>
-        
+
     </main>
 
-    <div class = "footer" >
+    <div class="footer">
         <i style="font-size: 13px; color: #ffffff;"></i>
         &copy; 2024 Green Life. Proudly created by <a
             style="font-size: 13px; color: #ffffff; font-style: italic; text-decoration:underline;"
