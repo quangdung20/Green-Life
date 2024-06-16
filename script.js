@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.item_nav');
+    const links = document.querySelectorAll('a.item_nav');
 
     // Khởi tạo trạng thái ban đầu khi tải trang
     initializeCurrentPage();
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             links.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
             const page = event.target.getAttribute('data-page');
+            console.log(page);
             loadPage(page);
             
         });
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateCurrentPage(page) {
-        const currentLink = document.querySelector('.item_nav');
+        const currentLink = document.querySelector('.item_nav.current');
         if (currentLink) {
             currentLink.classList.remove('current');
         }
@@ -116,8 +117,10 @@ function openNavBar() {
 function closeNavBar() {
     const menu = document.getElementById('menu-bar');
     const menuBarItem = document.querySelectorAll('.menu-bar-item');
+
     // khi click vao item menu thi an menu
     if (window.innerWidth <= 812) {
+        if (menu.style.display === 'block') {
             // click vao item menu thi an menu
             menuBarItem.forEach(item => {
                 item.addEventListener('click', function () {
@@ -125,7 +128,7 @@ function closeNavBar() {
                 });
             }
             );
-        
+        }
     }
 }
 
