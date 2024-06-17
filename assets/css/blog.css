@@ -38,6 +38,7 @@
 .box-category-middle {
     display: flex;
     width: 100%;
+    gap: 30px;
     justify-content: space-around;
 }
 
@@ -257,3 +258,6 @@ a, input, select, textarea {
     gap: 15px;
 }
 
+.detail-comment{
+    width: 100% !important;
+}

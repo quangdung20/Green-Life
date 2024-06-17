@@ -500,8 +500,9 @@ button {
     }
 
     .box-category-item {
-        width: 50% !important;
+        width: 80% !important;
         margin: 10px 0;
+        gap: 100px !important;
     }
 
     .container-text-home {
