@@ -11,11 +11,11 @@
     margin-top: 0;
     margin-bottom: 3px;
 }
-.mb-3
+
 .user-date {
-    margin: 0;
-    color: #858585;
-    font-style: italic;
+    margin: 0 !important;
+    color: #858585 !important;
+    font-style: italic !important;
 }
 
 .detail__related {
@@ -257,6 +257,3 @@ a, input, select, textarea {
     gap: 15px;
 }
 
-.user-info {
-    margin: 30px 0 0 0;
-}
