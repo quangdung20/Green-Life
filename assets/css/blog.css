@@ -253,7 +253,7 @@ a, input, select, textarea {
 .post-user {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     gap: 15px;
 }
 
