@@ -99,11 +99,14 @@ h4 {
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
+    color: #333 !important;
 }
 
 .position {
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     font-size: 16px;
+    color: #333 !important;
+
 }
 
 .avatar {
@@ -126,13 +129,14 @@ h4 {
     /* padding: 20px; */
     padding-bottom: 20px;
     background-color: #f8f9fa;
+    color:  #333 !important;
     /* Màu nền của phần liên hệ */
 
 }
 
 /* Định dạng tiêu đề */
 .title-contact {
-    margin: 0;
+    margin: 0 0 20px 0;
     color: #333;
     /* Màu chữ của tiêu đề */
 }
